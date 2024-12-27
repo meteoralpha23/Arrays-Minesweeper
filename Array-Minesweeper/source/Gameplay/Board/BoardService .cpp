@@ -4,6 +4,9 @@ namespace Gameplay
 {
 	namespace Board
 	{
+	
+		using namespace UI;
+		using namespace UI::UIElement;
 
 		BoardService::BoardService()
 		{
@@ -31,6 +34,9 @@ namespace Gameplay
 			board_controller->render();
 		}
 
+		
+
+
 		void BoardService::resetBoard()
 		{
 			board_controller->reset();
@@ -40,4 +46,7 @@ namespace Gameplay
 		{
 			delete(board_controller);
 		}
+
+
 	}
+}

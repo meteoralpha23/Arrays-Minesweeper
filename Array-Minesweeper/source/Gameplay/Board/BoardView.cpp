@@ -9,7 +9,7 @@ namespace Gameplay
     namespace Board
     {
         using namespace UI::UIElement;
-    
+        
         using namespace Global;
 
         BoardView::BoardView(BoardController* controller)
@@ -56,5 +56,9 @@ namespace Gameplay
             background_image->render();
             board_image->render();
         }
+
+     
+
+        
     }
 }

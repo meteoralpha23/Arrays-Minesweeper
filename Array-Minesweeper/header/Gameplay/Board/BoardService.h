@@ -1,6 +1,8 @@
 #pragma once
-#pragma once
 #include "../../header/Gameplay/Board/BoardController.h"
+
+#include "../../header/UI/UIElement/ButtonView.h"
+
 
 namespace Gameplay
 {
@@ -19,6 +21,8 @@ namespace Gameplay
             void initialize();
             void update();
             void render();
+
+          
 
             void resetBoard();
         };
