@@ -1,6 +1,6 @@
 #pragma once
 #include <sfml/Graphics.hpp>
-
+#include"../../header/Gameplay/Board/BoardView.h"
 
 namespace Gameplay
 {
@@ -22,10 +22,12 @@ namespace Gameplay
             void update();
             void render();
             void reset();
-            void move();
+            
           
 
         private:
+
+            BoardView* board_view;
             void createBoard();
             void destroy();
             void deleteBoard();
