@@ -3,7 +3,7 @@
 #include "../../header/Event/EventService.h"
 #include "../../header/UI/UIService.h"
 #include "../../header/Sound/SoundService.h"
-
+#include "../../header/Gameplay/Board/BoardService.h"
 namespace Global
 {
     class ServiceLocator
@@ -13,6 +13,7 @@ namespace Global
         Graphics::GraphicService* graphic_service;
         Sound::SoundService* sound_service;
         UI::UIService* ui_service;
+        Gameplay::Board::BoardService* board_service;
 
         ServiceLocator();
         ~ServiceLocator();
@@ -31,6 +32,7 @@ namespace Global
         Graphics::GraphicService* getGraphicService();
         Sound::SoundService* getSoundService();
         UI::UIService* getUIService();
+        Gameplay::Board::BoardService* getBoardService();
         void deleteServiceLocator();
     };
 }
