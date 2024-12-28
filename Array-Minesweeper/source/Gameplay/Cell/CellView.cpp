@@ -23,7 +23,7 @@ namespace Gameplay
 		}
 		void CellView::update()
 		{
-			cell_button->update();
+			cell_button-> update();
 		}
 		void CellView::render()
 		{
@@ -32,7 +32,7 @@ namespace Gameplay
 		}
 		void CellView::initializeButtonImage(float width, float height)
 		{
-			cell_button->initialize("Cell", Config::cells_texture_path, width, height,  Vector2f(0, 0));
+			cell_button->initialize("Cell", Config::cells_texture_path, width * slice_count, height, new Vector2f(0, 0));
 		}
 		
 	}
