@@ -1,7 +1,7 @@
 #pragma once
 #include <sfml/Graphics.hpp>
 
-
+#include "../../header/Gameplay/Cell/CellController.h"
 namespace Gameplay
 {
     namespace Board
@@ -25,9 +25,9 @@ namespace Gameplay
 
         private:
             BoardView* board_view;
-         
+            Cell::CellController* cell;
 
-            
+            void createBoard();
             void resetBoard();
             void deleteBoard();
             void destroy();
